@@ -23,6 +23,13 @@ alias fcd='cd "$(find . -type d -print | fzf)"'
 alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 # alias reload_way='chmod +x ~/shell_scripts/waybar_reload.sh && ~/shell_scripts/waybar_reload.sh'
 alias reload_way='killall waybar && waybar & disown'
+alias silent='asusctl profile -P Quiet'
+alias perform='asusctl profile -P Performance'
+alias xampp_gui='sudo /opt/lampp/manager-linux-x64.run'
+alias xampp_start='sudo /opt/lampp/lampp start'
+alias xampp_status='sudo /opt/lampp/lampp status'
+alias cdphp='cd /opt/lampp/htdocs/'
+alias fastfetch='fastfetch -l /home/ibrahem/Pictures/Camera/ryo_arch.jpg --logo-width 45 --logo-height 20'
 
 # Evals
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -138,3 +145,5 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 
 alias nigga='echo 123 | sudo -S shutdown -P now'
+export PATH="/home/ibrahem/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/ibrahem/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
