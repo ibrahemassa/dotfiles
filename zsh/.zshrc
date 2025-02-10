@@ -1,14 +1,21 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+#
 neofetch
 # fastfetch
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init --path)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+#
 #
 # Aliases
 alias ls='ls --color=auto'
@@ -27,9 +34,10 @@ alias silent='asusctl profile -P Quiet'
 alias perform='asusctl profile -P Performance'
 alias xampp_gui='sudo /opt/lampp/manager-linux-x64.run'
 alias xampp_start='sudo /opt/lampp/lampp start'
+alias xampp_stop='sudo /opt/lampp/lampp stop'
 alias xampp_status='sudo /opt/lampp/lampp status'
 alias cdphp='cd /opt/lampp/htdocs/'
-alias fastfetch='fastfetch -l /home/ibrahem/Pictures/Camera/ryo_arch.jpg --logo-width 45 --logo-height 20'
+alias ryofetch='fastfetch -l /home/ibrahem/Pictures/Camera/ryo_arch.jpg --logo-width 45 --logo-height 20'
 
 # Evals
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -144,6 +152,5 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-alias nigga='echo 123 | sudo -S shutdown -P now'
 export PATH="/home/ibrahem/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/home/ibrahem/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
